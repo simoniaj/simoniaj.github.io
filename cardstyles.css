@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /*Cursive Font*/
-
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap%27'); /*Times Variant*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap'); /*Times Variant Italic*/
 
 .cardcontainer {
     display: flex;
@@ -16,7 +16,7 @@
     width: 320px;
     height: 450px;
     margin: 30px;
-    background: linear-gradient(to bottom, #FF2AE0, #271d69);
+    background: linear-gradient(to bottom, #b7127f, #20165d);
     border-radius: 20px;
     border-bottom-left-radius: 160px;
     border-bottom-right-radius: 160px;
@@ -101,10 +101,11 @@
     font-size: 1.75rem;
     color: #ffffff;
     margin-bottom: 10px;
-    font-family: Lobster;
+    font-family: Lora;
 }
 
 .content p {
     color: #ffffff;
     line-height: 1.5rem;
+    font-family: Instrument Serif;
 }
