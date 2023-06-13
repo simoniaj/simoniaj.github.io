@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap'); /*Tech font*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /*Cursive Font*/
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap%27'); /*Times Variant*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap'); /*Times Variant Italic*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap'); /* Tag Line Font*/
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+
+    background-color: #f7edf6;
+    color: #bc2488;
+    background-image: url("images/bckimg.png");
+    background-repeat: repeat-x;
+    background-position: top;
+    min-height: 100vh;
+}
+
+header {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 70px;
+    padding-left: 80px;
+    padding-right: 80px;
+    vertical-align: middle;
+}
+
+/* Lines in the header */
+.flourish {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 12%;
+  }
+  .flourish:before, 
+  .flourish:after {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    top: -25px;
+    position: relative;
+    width: 50%;
+    border-top-style: solid;
+    border-top-width: 2px;
+  }
+  .flourish:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  .flourish:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+    .logo{
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+    }
+    /* Fonts  */
+    .InstruSeriffont { /*website name font*/
+        font-family: Instrument Serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 1;
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        margin: 0px;
+    }
+    .LoraItalfont { /*tagline font*/
+        font-family: Lora;
+        font-size: 13px;
+        font-weight: 50;
+        line-height: 2;
+        margin: 0px;
+        padding: 0px;
+        font-weight: bold;
+    }
+    .Oswaldfont {    /*general/body font*/
+        font-family: Oswald;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .Lobsterfont { /*heading font*/
+        font-family: Lobster;
+    }
+
+/* Customized Scroll Bar */
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+background: #f7edf6;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#271d69,#920dae,#f7edf6);
+  border-radius: 15px
+}
+
+.AboutAuthor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #bc2488;
+    gap:25px;
+}
+.MeetTheAuthor{
+    font-size: 50px;
+    padding: 0px;
+    padding-left: 10px;
+    margin: 0px;
+    margin-left: 5%;
+    color: #bc2488;
+    width: auto;
+}
+
+
+.WhoIsShe{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    color: #bc2488;
+    font-family: Lora;
+        font-size: 22px;
+        font-weight: 50;
+}
+.AboutAuthorimg{
+    margin: 10px;
+    padding-top: 0;
+    padding-left: 15px;
+    padding-right: 20px;
+    height: 370px;
+    gap: 0;
+    border-radius: 180px;
+}
+
+footer {
+    font-family: Lora;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 2;
+    color:#271d69;
+    width: 100%;
+    bottom: 0px;
+    margin-top: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+    footer p {
+        margin: 0px;
+    }
+    #icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        font-size: 1.5rem;
+        color: #271d69;
+    }
+
+    .iconhovergit:hover{
+        background-color: #bc2488;
+        color: white;
+        border-radius: 20px;
+    }
+    .iconhoverlinkedin:hover{
+        background-color: #bc2488;
+        color: white;
+        padding: 0px;
+        border-radius: 20%;
+    }
+    .iconhovermail:hover{
+        background-color: #bc2488;
+        color: white;
+        border-radius: 20%;
+    }
