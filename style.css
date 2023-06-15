@@ -83,9 +83,20 @@ header {
         font-weight: 50;
         line-height: 2;
         margin: 0rem;
-        padding: 0rem;
         font-weight: bold;
     }
+
+        .LoraItalfont-subheadings{
+            font-family: Lora;
+            font-size: 0.8125rem;
+            font-weight: 50;
+            line-height: 2;
+            margin: 0rem;
+            padding: 0rem;
+            padding-left: 5em;
+            font-weight: bold;
+        }
+
     .Oswaldfont {    /*general/body font*/
         font-family: Oswald;
         font-size: 1.25rem;
@@ -131,8 +142,8 @@ hr{
     color: #bc2488;
     gap: 40px;
     margin: auto;
-    margin-bottom: 6.25em;
     width: 90%;
+
 }
 .MeetTheAuthor{
     font-size: 3.125rem;
@@ -140,6 +151,7 @@ hr{
     padding-left: 0.625rem;
     margin: 0rem;
     margin-left: 5%;
+    margin-top: 2em;
     color: #bc2488;
     width: auto;
 }

@@ -1,0 +1,100 @@
+:root {
+  --total: 4;
+  --offset-width: 10vw;
+  --easing: cubic-bezier(.8, 0, .2, 1);
+  --duration: .6s;
+}
+
+.skillscontainer {
+  height: 90vh;
+  width: 90vw;
+  overflow: hidden;
+  padding: 0em;
+  padding-left: 6.25em;
+}
+.skillscontainer .skill-cards {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.skillscontainer .skill-cards .skill-list {
+  --tx: calc( -100% + var(--offset-width));
+  width: 60vw;
+  height: 100%;
+  position: absolute;
+  z-index: calc(var(--total) - var(--i));
+  margin-left: calc(var(--i) * var(--offset-width));
+  -webkit-transform: translateX(var(--tx));
+          transform: translateX(var(--tx));
+  -webkit-transition: -webkit-transform var(--duration) var(--easing);
+  transition: -webkit-transform var(--duration) var(--easing);
+  transition: transform var(--duration) var(--easing);
+  transition: transform var(--duration) var(--easing), -webkit-transform var(--duration) var(--easing);
+  -webkit-animation: slide-down 1s cubic-bezier(0.5, 0, 0.3, 1);
+          animation: slide-down 1s cubic-bezier(0.5, 0, 0.3, 1);
+  -webkit-animation-delay: calc(var(--i) * 0.15s);
+          animation-delay: calc(var(--i) * 0.15s);
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+@-webkit-keyframes slide-down {
+  from {
+    -webkit-transform: translateX(var(--tx)) translateY(-100%);
+            transform: translateX(var(--tx)) translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateX(var(--tx)) translateY(0);
+            transform: translateX(var(--tx)) translateY(0);
+  }
+}
+@keyframes slide-down {
+  from {
+    -webkit-transform: translateX(var(--tx)) translateY(-100%);
+            transform: translateX(var(--tx)) translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateX(var(--tx)) translateY(0);
+            transform: translateX(var(--tx)) translateY(0);
+  }
+}
+.skillscontainer .skill-cards .skill-list:hover {
+  -webkit-transform: translateX(-2vw);
+          transform: translateX(-2vw);
+}
+.skillscontainer .skill-cards .skill-list:hover ~ .skill-list {
+  -webkit-transform: none;
+          transform: none;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  margin-top: 1.875em;
+  padding: 0%;
+  padding-left: 1.875em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+
+/* PARALAX BACKGROUND FOR SKILL SECTION */
+
+.parallax {
+  /* The image used */
+  background-image: url("images/paralaxbckg.jpeg");
+
+  /* Set a specific height */
+  min-height: 500px;
+  height: 630px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
