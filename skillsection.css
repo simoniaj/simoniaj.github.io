@@ -7,10 +7,10 @@
 
 .skillscontainer {
   height: 90vh;
-  width: 90vw;
+  width: 100vw;
   overflow: hidden;
   padding: 0em;
-  padding-left: 6.25em;
+  padding-left: 2em;
 }
 .skillscontainer .skill-cards {
   list-style-type: none;
@@ -20,6 +20,7 @@
   height: 100%;
   overflow: hidden;
   position: relative;
+  border-radius: 7px;
 }
 .skillscontainer .skill-cards .skill-list {
   --tx: calc( -100% + var(--offset-width));
@@ -70,17 +71,17 @@
           transform: none;
 }
 
-img {
+.skill-list img {
   height: 100%;
   width: 100%;
   margin: 0%;
   margin-top: 1.875em;
   padding: 0%;
   padding-left: 1.875em;
+  border-radius: 5px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 
 /* PARALAX BACKGROUND FOR SKILL SECTION */
 
