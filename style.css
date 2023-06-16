@@ -133,6 +133,14 @@ hr{
         font-size: 3.125rem;
         font-weight: 50;
   }
+    .skills-h1{
+        margin-bottom: 0;
+        padding-bottom: 0;
+            padding-left: 5%;
+        font-family: Lora;
+            font-size: 1.875rem;
+            font-weight: 50;
+    }
 
 /* ABOUT THE AUTHOR */
 .AboutAuthor{
