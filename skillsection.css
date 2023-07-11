@@ -8,7 +8,7 @@
 
   /* Set a specific height */
   min-height: 500px;
-  height: 630px;
+  height: 560px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
